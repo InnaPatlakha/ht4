@@ -6,14 +6,13 @@
 2*2=4
 2/2=1 */
 
-let firstNumber = parseInt(prompt('enter first number', 100));
-let secondNumber = parseInt(prompt('enter second number', 100));
-let resultPlus = (firstNumber + secondNumber);
-let resultMinus = (firstNumber - secondNumber);
-let resultMultiply = (firstNumber * secondNumber);
-let resultDivide = (firstNumber / secondNumber);
+let firstNumber = Number(prompt('enter first number', 100));
+let secondNumber = Number(prompt('enter second number', 100));
 
-alert (`${firstNumber} + ${secondNumber} = ${resultPlus}`);
-alert (`${firstNumber} - ${secondNumber} = ${resultMinus}`);
-alert (`${firstNumber} * ${secondNumber} = ${resultMultiply}`);
-alert (`${firstNumber} / ${secondNumber} = ${resultDivide}`);
+alert (`
+  User entered ${firstNumber} and ${secondNumber}
+  ${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}
+  ${firstNumber} - ${secondNumber} = ${firstNumber - secondNumber}
+  ${firstNumber} * ${secondNumber} = ${firstNumber * secondNumber}
+  ${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}
+`);
